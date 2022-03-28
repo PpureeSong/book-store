@@ -1,6 +1,4 @@
-package bookstore.domain;
-
-import bookstore.infra.AbstractEvent;
+package bookstore;
 
 
 public class OrderPlaced extends AbstractEvent {
@@ -10,32 +8,32 @@ public class OrderPlaced extends AbstractEvent {
     private String customerId;
     private String preference;
 
-    public Long getid() {
+    public Long getId() {
         return id;
     }
 
-    public void setid(Long id) {
+    public void setId(Long id) {
         this.id = id;
     }
-    public String getbookId() {
+    public String getBookId() {
         return bookId;
     }
 
-    public void setbookId(String bookId) {
+    public void setBookId(String bookId) {
         this.bookId = bookId;
     }
-    public String getcustomerId() {
+    public String getCustomerId() {
         return customerId;
     }
 
-    public void setcustomerId(String customerId) {
+    public void setCustomerId(String customerId) {
         this.customerId = customerId;
     }
-    public String getpreference() {
+    public String getPreference() {
         return preference;
     }
 
-    public void setpreference(String preference) {
+    public void setPreference(String preference) {
         this.preference = preference;
     }
 }
